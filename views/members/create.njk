@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Cadastro - Gym Manager</title>
+{% endblock %}
+
+{% block content %}
+
+    <form class="card" method = "POST" action= "/members">
+        <section class="avatar">
+
+        </section>
+
+        <section class="details">
+
+            <h3>
+                Novo Membro
+            </h3>
+
+            {% include 'members/fields.njk' %}
+            
+        </section>
+    </form>
+
+{% endblock content %}
